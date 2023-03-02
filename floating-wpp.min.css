@@ -1,0 +1,372 @@
+.floating-wpp {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-family: 'Open sans';
+    font-size: 14px;
+    transition: bottom .2s
+}
+
+.floating-wpp .floating-wpp-button {
+    width: 72px;
+    height: 72px;
+    background-color: #25d366;
+    background-image: url(../img/whatsapp.svg);
+    background-position: center;
+    background-size: 180%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(60, 60, 60, .4);
+    transition: box-shadow .2s;
+    cursor: pointer
+}
+
+.floating-wpp:hover {
+    bottom: 17px
+}
+
+.floating-wpp:hover .floating-wpp-button {
+    box-shadow: 1px 2px 8px rgba(60, 60, 60, .4)
+}
+
+.floating-wpp .floating-wpp-popup {
+    border-radius: 6px;
+    background-color: #e5ddd5;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 1px 2px 8px rgba(60, 60, 60, .25);
+    width: 0;
+    height: 0;
+    bottom: 82px;
+    transition: width .2s, height .2s, padding .2s;
+    transform-origin: bottom
+}
+
+.floating-wpp .floating-wpp-popup.active {
+    padding: 0 12px 12px 12px;
+    width: 260px;
+    height: auto
+}
+
+.floating-wpp .floating-wpp-popup .floating-wpp-message {
+    background-color: white;
+    padding: 8px;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+    opacity: 0;
+    transition: opacity .2s
+}
+
+.floating-wpp .floating-wpp-popup.active .floating-wpp-message {
+    opacity: 1;
+    transition-delay: .2s
+}
+
+.floating-wpp .floating-wpp-popup .floating-wpp-head {
+    text-align: right;
+    color: white;
+    margin: 0 -15px 10px -15px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer
+}
+
+.floating-wpp .floating-wpp-input-message {
+    background-color: white;
+    margin: 10px -15px -15px -15px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center
+}
+
+.floating-wpp .floating-wpp-input-message textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none
+}
+
+.floating-wpp .floating-wpp-btn-send {
+    margin-left: 12px;
+    font-size: 0;
+    cursor: pointer
+}
+
+.facebook:hover {
+    color: #1877f2 !important;
+}
+
+.facebookold:hover {
+    color: #3b5998 !important;
+}
+
+.twitter:hover {
+    color: #1da1f2 !important;
+}
+
+.youtube:hover {
+    color: #ff0000 !important;
+}
+
+.instagrammagenta:hover {
+    color: #c32aa3 !important;
+}
+
+.instagramblue:hover {
+    color: #4c5fd7 !important;
+}
+
+.instagrampurple:hover {
+    color: #7232bd !important;
+}
+
+.instagramorange:hover {
+    color: #f46f30 !important;
+}
+
+.instagramyellow:hover {
+    color: #ffdc7d !important;
+}
+
+.googleblue:hover {
+    color: #4285f4 !important;
+}
+
+.googlered:hover {
+    color: #ea4335 !important;
+}
+
+.googleyellow:hover {
+    color: #fbbc05 !important;
+}
+
+.googlegreen:hover {
+    color: #34a853 !important;
+}
+
+.pinterest:hover {
+    color: #bd081c !important;
+}
+
+.googleplus:hover {
+    color: #db4437 !important;
+}
+
+.linkedin:hover {
+    color: #007bb5 !important;
+}
+
+.vimeoblue:hover {
+    color: #1ab7ea !important;
+}
+
+.tumblr:hover {
+    color: #2c4762 !important;
+}
+
+.snapchat:hover {
+    color: #fffc00 !important;
+}
+
+.whatsappgreen:hover {
+    color: #25d366 !important;
+}
+
+.whatsappteal1:hover {
+    color: #075e54 !important;
+}
+
+.whatsappteal2:hover {
+    color: #128c7e !important;
+}
+
+.mastodon:hover {
+    color: #2b90d9 !important;
+}
+
+.apple:hover {
+    color: #a6b1b7 !important;
+}
+
+.amazon:hover {
+    color: #ff9900 !important;
+}
+
+.microsoftred:hover {
+    color: #f35022 !important;
+}
+
+.microsoftgreen:hover {
+    color: #80bb03 !important;
+}
+
+.microsoftblue:hover {
+    color: #03a5f0 !important;
+}
+
+.microsoftyellow:hover {
+    color: #ffb903 !important;
+}
+
+.periscope:hover {
+    color: #40a4c4 !important;
+}
+
+.foursquarepink:hover {
+    color: #f94877 !important;
+}
+
+.foursquarenavy:hover {
+    color: #073282 !important;
+}
+
+.foursquareblue:hover {
+    color: #2d5be3 !important;
+}
+
+.swarm:hover {
+    color: #ffa633 !important;
+}
+
+.medium:hover {
+    color: #02b875 !important;
+}
+
+.skypeblue:hover {
+    color: #00aff0 !important;
+}
+
+.skypedkblue:hover {
+    color: #0078d7 !important;
+}
+
+.android:hover {
+    color: #a4c639 !important;
+}
+
+.stumbleupon:hover {
+    color: #e94826 !important;
+}
+
+.flickrpink:hover {
+    color: #f40083 !important;
+}
+
+.flickrblue:hover {
+    color: #006add !important;
+}
+
+.yahoo:hover {
+    color: #430297 !important;
+}
+
+.twitch:hover {
+    color: #6441a4 !important;
+}
+
+.soundcloud:hover {
+    color: #ff5500 !important;
+}
+
+.spotifygreen:hover {
+    color: #1ed760 !important;
+}
+
+.spotifydarkgreen:hover {
+    color: #1db954 !important;
+}
+
+.dribbble:hover {
+    color: #ea4c89 !important;
+}
+
+.slackpurple:hover {
+    color: #4a154b !important;
+}
+
+.slackblue:hover {
+    color: #36c5f0 !important;
+}
+
+.slackgreen:hover {
+    color: #2eb67d !important;
+}
+
+.slackred:hover {
+    color: #e01e5a !important;
+}
+
+.slackyellow:hover {
+    color: #ecb22e !important;
+}
+
+.reddit:hover {
+    color: #ff5700 !important;
+}
+
+.deviantart:hover {
+    color: #05cc47 !important;
+}
+
+.pocket:hover {
+    color: #ee4056 !important;
+}
+
+.quora:hover {
+    color: #aa2200 !important;
+}
+
+.quorablue:hover {
+    color: #2b6dad !important;
+}
+
+.slideshareorange:hover {
+    color: #e68523 !important;
+}
+
+.slideshareblue:hover {
+    color: #00a0dc !important;
+}
+
+.fivehundredpx:hover {
+    color: #0099e5 !important;
+}
+
+.vk:hover {
+    color: #4a76a8 !important;
+}
+
+.listlyorange:hover {
+    color: #df6d46 !important;
+}
+
+.listlyblue:hover {
+    color: #52b1b3 !important;
+}
+
+.vine:hover {
+    color: #00b489 !important;
+}
+
+.steam:hover {
+    color: #171a21 !important;
+}
+
+.discord:hover {
+    color: #7289da !important;
+}
+
+.telegram:hover {
+    color: #0088cc !important;
+}
+
+.clarity:hover {
+    color: #61bed9 !important;
+}
